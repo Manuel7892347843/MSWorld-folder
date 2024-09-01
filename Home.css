@@ -8,12 +8,12 @@
 
 body{
     background: #f9f9f9;
-    max-height: 300vh;
+    max-height: 200vh;
     overflow-x: hidden;
     scroll-behavior:smooth;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    height: 200vh; /* Imposta l'altezza del corpo al 200% dell'altezza della viewport */
+    height: 100vh; /* Imposta l'altezza del corpo al 200% dell'altezza della viewport */
 }
 
 .top-menu{
@@ -93,6 +93,7 @@ body{
     position: relative;
     background: #003329;
     padding: 100px;
+    margin-top: 5%;
 }
 
 .sec h2{
@@ -108,7 +109,7 @@ body{
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 100vh;
     margin: auto;
 }
 
@@ -328,7 +329,7 @@ header{
     position: relative;
     left: 0;
     top: 0;
-    width: 1005;
+    width: 100%;
     height: 80px;
 }
 
@@ -340,7 +341,7 @@ header{
     position:absolute;
     overflow: hidden;
     width:100% !important;
-    height:100% !important;
+    height:128% !important;
     object-fit: cover;
     z-index: -100;
 
@@ -362,7 +363,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     transition: 1s;
 }
@@ -396,3 +397,95 @@ header{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+
+@media screen and (max-width: 767px) {
+    /* Ridurre padding e margini nelle sezioni per dispositivi mobili */
+    .sec {
+        padding: 50px 20px;
+        margin-top: -59vh;
+    }
+
+    .sec h2 {
+        margin-bottom: 5px;
+    }
+
+    /* Aggiustare il margine nel container dello slideshow */
+    .slideshow-container {
+        margin: 0;
+    }
+
+    /* Ridurre il margine delle immagini nel contenitore */
+    .img_slider {
+        margin: 0;
+    }
+
+    /* Aggiustare la dimensione del testo del titolo per il mobile */
+    #text {
+        font-size: 2em; /* Puoi ridurre la dimensione del testo per adattarla meglio al mobile */
+    }
+    /* Stile del menu per schermi desktop */
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Hamburger Menu nascosto su desktop */
+.hamburger-menu {
+        display: none;
+    }
+
+
+    .top-menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: none; /* Nasconde il menu di navigazione inizialmente */
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .navigation a {
+        padding: 15px 20px;
+        text-align: center;
+        width: 90%;
+        border-bottom: 1px solid #359381;
+        background-color: #003329;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .hamburger-menu {
+        display: block; /* Mostra l'icona del menu a tendina */
+        cursor: pointer;
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
+
+    /* Mostra il menu quando attivato */
+    .navigation.active {
+        display: flex;
+    }
+
+    .intro{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 1s;
+}
+}
+

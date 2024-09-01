@@ -287,3 +287,54 @@ ul{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+
+
+@media screen and (max-width: 767px) {
+/* Hamburger Menu nascosto su desktop */
+.hamburger-menu {
+        display: none;
+    }
+
+
+    .top-menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: none; /* Nasconde il menu di navigazione inizialmente */
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .navigation a {
+        padding: 15px 20px;
+        text-align: center;
+        width: 90%;
+        border-bottom: 1px solid #359381;
+        background-color: #003329;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .hamburger-menu {
+        display: block; /* Mostra l'icona del menu a tendina */
+        cursor: pointer;
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
+
+    /* Mostra il menu quando attivato */
+    .navigation.active {
+        display: flex;
+    }
+}

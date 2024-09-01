@@ -23,10 +23,17 @@ window.addEventListener('DOMContentLoaded', () =>{
     }, 2000);
 
     setTimeout(() =>{
-      intro.style.top = '-100vh';
+      intro.style.top = '-128vh';
     }, 2300)
 
   })
 
 })
+
+    function toggleMenu() {
+        const nav = document.querySelector('.navigation');
+        nav.classList.toggle('active');
+    }
+
+
 

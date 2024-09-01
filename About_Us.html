@@ -23,15 +23,25 @@
         </div>
 
         <header>
-            <a href="index.html" class="icon">MStudio</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About_Us.html" class="active">About Us</a></li>
-                <li><a href="#">Functions</a></li>
-                <li><a href="#">Support</a></li>
-                <!--<li><a href="Login_Form.html">Login</a></li>--><!--Login IN AboutUs??? si o no?-->
-            </ul>
+            <div class="top-menu">
+                <a href="Home.html" class="icon">MStudio</a>
+                
+                <!-- Hamburger Menu Icon -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+        
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <a href="Home.html" class="active">Home</a>
+                    <a href="About_Us.html" class="scroll-link">About Us</a>
+                    <a href="#">Functions</a>
+                    <a href="#">Support</a>
+                    <a href="Login_Form.html">Login</a>
+                </nav>
+            </div>
         </header>
+        
         <section>
             <img src="Images/stars.png" id="stars">
             <img src="Images/moon.png" id="moon">
