@@ -398,11 +398,11 @@ header{
     transition: ease-in-out 0.5s;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1500px) {
     /* Ridurre padding e margini nelle sezioni per dispositivi mobili */
     .sec {
         padding: 50px 20px;
-        margin-top: -59vh;
+        margin-top: -10%;
     }
 
     .sec h2 {
@@ -427,11 +427,11 @@ header{
 .navigation {
     display: flex;
     justify-content: flex-start;
-}
+    }
 
 /* Hamburger Menu nascosto su desktop */
 .hamburger-menu {
-        display: none;
+        display:none;
     }
 
 
@@ -469,7 +469,7 @@ header{
         cursor: pointer;
         font-size: 2em;
         color: rgb(255, 255, 255);
-        text-align: right;
+        text-align: left;
     }
 
     /* Mostra il menu quando attivato */
@@ -486,6 +486,23 @@ header{
     height: 100vh;
     background-color: black;
     transition: 1s;
-}
+    }
 }
 
+
+@media screen and (min-width: 1500px){
+
+    .hamburger-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .sec {
+        padding: 50px 20px;
+        margin-top: -135%;
+    }
+    
+}
