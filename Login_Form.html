@@ -1,46 +1,3 @@
-<?php
-    session_start();
-
-    include("db.php");
-
-    if($_SERVER['REQUEST_METHOD'] == "POST")
-    {
-        $mail = $_POST['Email'];
-        $pass = $_POST['Password'];
-        $con_pass = $_POST['ConfirmPassword'];
-
-        if(!empty($mail) && !empty($pass))
-        {
-            $query = "SELECT * FROM form WHERE Email = '$mail'";
-            $result = mysqli_query($con, $query);
-
-            if($result)
-            {
-                if($result && mysqli_num_rows($result) > 0)
-                {
-                    $user_data = mysqli_fetch_assoc($result);
-
-                    if($user_data['Password'] == $pass)
-                    {
-                        header("location: index.php");
-                        exit();
-                        
-                    }
-                }
-            }
-
-            echo "<script type='text/javascript'> alert('Wrong E-mail or Password!')</script>";
-        }
-        else
-        {
-            echo "<script type='text/javascript'> alert('Wrong E-mail or Password!')</script>";
-            header("location: Login_Form.php");
-        }
-    }
-?>
-
-<!--SUDDIVISIONE PHP E HTML-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,14 +21,14 @@
 
     <header>
         <div class="wrapper">
-            <form method="POST" >
+            <form action="Login_Form.php" method="post">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="E-mail" name="Email" required>
+                    <input type="text" placeholder="E-mail" name="email">
                     <i class="bx bxs-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" name="Password" required>
+                    <input type="password" placeholder="Password" name="password">
                     <i class="bx bxs-lock-alt"></i>
                 </div>
     
@@ -82,10 +39,10 @@
                     <a href="#">Forgot password?</a>
                 </div>
     
-                <input type="submit" class="btn" placeholder="Login">
+                <button type="submit" class="btn"><a href="Home.html">Login</a></button>
     
                 <div class="register-link">
-                    <p>Don't have an account? <a href="Register_Form.php">Register</a></p>
+                    <p>Don't have an account? <a href="Register_Form.html">Register</a></p>
                 </div>
             </form>
         </div>
