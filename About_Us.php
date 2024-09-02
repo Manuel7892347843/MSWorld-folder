@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="About_Us.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="Transition">
+            <h1 class="Transition-text">
+                <span class="Transition-Animation">About</span><span class="Transition-Animation">Us</span>
+            </h1>
+
+            <div class="contenitore">
+                <video muted autoplay no-replay class="videofullscreen">
+                  <source src="SlideReveal(Teal).webm" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <header>
+            <a href="index.php" class="icon">MStudio</a>
+            <nav>
+                <ul>
+                    <li><a href="index.php" class="scroll-link" >Home</a></li>
+                    <li><a href="About_Us.php"  class="active">About Us</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="Login_Form.php">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <img src="Images/stars.png" id="stars">
+            <img src="Images/moon.png" id="moon">
+            <img src="Images/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">About Us</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="Images/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax Scrolling Effects</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit tenetur laborum similique nisi numquam quaerat perspiciatis exercitationem vero delectus autem itaque quis natus, repellat ipsam esse tempore consectetur! Quibusdam, animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla aliquam inventore, quam voluptas unde pariatur mollitia dolor, alias odit ab illum molestiae molestias optio! Quas saepe placeat assumenda quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti maiores repellat explicabo veritatis cupiditate temporibus dolore exercitationem, maxime consectetur excepturi sit quaerat molestiae. Eos amet et earum facere impedit.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit tenetur laborum similique nisi numquam quaerat perspiciatis exercitationem vero delectus autem itaque quis natus, repellat ipsam esse tempore consectetur! Quibusdam, animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla aliquam inventore, quam voluptas unde pariatur mollitia dolor, alias odit ab illum molestiae molestias optio! Quas saepe placeat assumenda quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti maiores repellat explicabo veritatis cupiditate temporibus dolore exercitationem, maxime consectetur excepturi sit quaerat molestiae. Eos amet et earum facere impedit.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit tenetur laborum similique nisi numquam quaerat perspiciatis exercitationem vero delectus autem itaque quis natus, repellat ipsam esse tempore consectetur! Quibusdam, animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla aliquam inventore, quam voluptas unde pariatur mollitia dolor, alias odit ab illum molestiae molestias optio! Quas saepe placeat assumenda quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti maiores repellat explicabo veritatis cupiditate temporibus dolore exercitationem, maxime consectetur excepturi sit quaerat molestiae. Eos amet et earum facere impedit.<br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus ipsum, officia nam maiores quod sequi iste recusandae quos odio reprehenderit vel corporis! Enim voluptates id delectus nemo, cumque qui!<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium odit qui nam consectetur saepe officiis, nobis totam voluptate. Ea placeat inventore itaque doloribus labore. Sequi nisi voluptate nulla nam.<br><br></p>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Functions</h4>
+                        <ul>
+                            <li><a href="#">Soon Available</a></li>
+                            <li><a href="#">Soon Available</a></li>
+                            <li><a href="#">Soon Available</a></li>
+                            <li><a href="#">Soon Available</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="Parallax-Slider_About_Us.js"></script>
+        <script src="About_Us-animation.js"></script>
+    </body>
+</html>
