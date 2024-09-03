@@ -9,10 +9,24 @@
     <title>Login</title>
     <link rel="stylesheet" href="Login_Form.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script type="module" src="MSWORLD-LOGIN.js"></script>
 </head>
 
 <body>
+
+    <header>
+        <a href="index.html" class="icon">MStudio</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="About_Us.html"   >About Us</a></li>
+                <li><a href="#">Functions</a></li>
+                <li><a href="#"class="scroll-link">Support</a></li>
+                <li><a href="Login_Form.html" class="active" >Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="Transition">
         <h1 class="Transition-text">
@@ -20,7 +34,7 @@
         </h1>
     </div>
 
-    <header>
+    <div class="bho">
         <div class="wrapper">
             <form method="POST" action="">
                 <div id="signInMessage" class="messageDiv" style="display: none;"></div>
@@ -48,9 +62,12 @@
                 </div>
             </form>
         </div>
-    </header>
+    </div>
 
     <script src="Login_Form-animation.js"></script>
 </body>
+
+
+
 
 </html>

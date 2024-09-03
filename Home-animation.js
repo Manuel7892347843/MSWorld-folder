@@ -1,6 +1,6 @@
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.intro-text');
-let logoSpan = document.querySelectorAll('.Opening-Animation');
+let intro = document.querySelector('.Transition');
+let logo = document.querySelector('.Transition-text');
+let logoSpan = document.querySelectorAll('.Transition-Animation');
 
 window.addEventListener('DOMContentLoaded', () =>{
 
@@ -37,3 +37,4 @@ window.addEventListener('DOMContentLoaded', () =>{
     }
 
 }
+
