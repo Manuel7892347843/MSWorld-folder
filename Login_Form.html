@@ -9,6 +9,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="Login_Form.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="MSWORLD-LOGIN.js"></script>
 </head>
 
 <body>
@@ -21,14 +22,15 @@
 
     <header>
         <div class="wrapper">
-            <form action="Login_Form.php" method="post">
+            <form method="POST" action="">
+                <div id="signInMessage" class="messageDiv" style="display: none;"></div>
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="E-mail" name="email">
+                    <input type="text" placeholder="E-mail" id="rEmail" required>
                     <i class="bx bxs-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" name="password">
+                    <input type="password" placeholder="Password" id="rPassword" required>
                     <i class="bx bxs-lock-alt"></i>
                 </div>
     
@@ -39,7 +41,7 @@
                     <a href="#">Forgot password?</a>
                 </div>
     
-                <button type="submit" class="btn"><a href="Home.html">Login</a></button>
+                <button type="submit" class="btn" id="rSubmitLogin">Login</button>
     
                 <div class="register-link">
                     <p>Don't have an account? <a href="Register_Form.html">Register</a></p>
