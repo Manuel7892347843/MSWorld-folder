@@ -37,10 +37,20 @@ signIn.addEventListener('click', (event) => {
 
     signInWithEmailAndPassword(auth, email, password) // Corretto "aut" in "auth"
         .then((userCredential) => {
-            showMessage('Login is successful', 'signInMessage');
-            const user = userCredential.user;
-            localStorage.setItem('loggedInUserId', user.uid); // Corretto "loogedInUserId" in "loggedInUserId"
-            window.location.href = 'index.html';
+            if(email == 'admin@gmail.com' && password == 'admin2420.')
+            {
+                showMessage('Login is successful as Admin', 'signInMessage');
+                const user = userCredential.user;
+                localStorage.setItem('loggedInUserId', user.uid); // Corretto "loogedInUserId" in "loggedInUserId"
+                window.location.href = 'index.html';
+            }
+            else
+            {
+                showMessage('Login is successful', 'signInMessage');
+                const user = userCredential.user;
+                localStorage.setItem('loggedInUserId', user.uid); // Corretto "loogedInUserId" in "loggedInUserId"
+                window.location.href = 'index.html';
+            }
         })
         .catch((error) => {
             const errorCode = error.code;
